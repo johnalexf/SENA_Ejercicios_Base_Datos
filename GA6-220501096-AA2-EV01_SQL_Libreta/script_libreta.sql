@@ -27,3 +27,22 @@ VALUES
 --Ver todos los registros de la tabla libreta
 SELECT * FROM libreta;
 
+--Modificar un registro dentro de la tabla libreta;
+-- Para este caso lo recomendable y por buenas practicas el mejor hacer el cambio
+-- Teniendo en cuenta el ID del registro y no por los demas campos, pues esto
+-- puede llegar a alterar otros registros que coincidan con dicho valor.
+
+-- Actualizar un registro completo
+UPDATE libreta
+SET 
+nombre_libreta =  'Alberto Moralez',
+domicilio_libreta = 'Colon 121',
+telefono_libreta = '4234564'
+WHERE id_libreta = 1;
+
+-- Actualizar una parte de un registro
+UPDATE libreta
+SET 
+nombre_libreta =  'John Torres'
+WHERE id_libreta = 2;
+
