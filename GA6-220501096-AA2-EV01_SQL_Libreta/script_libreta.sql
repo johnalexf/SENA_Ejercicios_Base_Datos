@@ -11,3 +11,6 @@ CREATE TABLE libreta (
     domicilio_libreta VARCHAR(30) NOT NULL UNIQUE,
     telefono_libreta VARCHAR(11) NOT NULL UNIQUE
 );
+
+--Visualizar las tablas de la base de datos.
+SHOW TABLES;
