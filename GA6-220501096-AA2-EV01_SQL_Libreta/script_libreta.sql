@@ -23,3 +23,7 @@ INSERT INTO libreta(nombre_libreta, domicilio_libreta, telefono_libreta)
 VALUES
     ('Alberto Mores' , 'Colon 123' , '4234567'),
     ('Juan Torres' , 'Avellaneda 135' , '4458787');
+
+--Ver todos los registros de la tabla libreta
+SELECT * FROM libreta;
+
