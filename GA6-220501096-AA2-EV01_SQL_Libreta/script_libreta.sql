@@ -55,3 +55,7 @@ VALUES
     ('Diego Bustamante' , 'Colon 115' , '3234557'),
     ('Lorena Henao' , 'Avellaneda 148' , '3218581');
 
+-- Contar registros de la tabla libreta
+SELECT COUNT(*) AS 'cantidad de registros' FROM libreta;
+
+SELECT COUNT(id_libreta) AS 'cantidad de registros' FROM libreta;
