@@ -46,3 +46,12 @@ SET
 nombre_libreta =  'John Torres'
 WHERE id_libreta = 2;
 
+--Ingresar cinco registros mas
+INSERT INTO libreta(nombre_libreta, domicilio_libreta, telefono_libreta) 
+VALUES
+    ('Roberto Gómez' , 'Colon 101' , '4134557'),
+    ('Felipe Gutierrez' , 'Avellaneda 134' , '4458581'),
+    ('Andrea Hernandéz' , 'Avellaneda 114' , '3258581'),
+    ('Diego Bustamante' , 'Colon 115' , '3234557'),
+    ('Lorena Henao' , 'Avellaneda 148' , '3218581');
+
