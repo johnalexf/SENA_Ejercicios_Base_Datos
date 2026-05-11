@@ -14,3 +14,6 @@ CREATE TABLE libreta (
 
 --Visualizar las tablas de la base de datos.
 SHOW TABLES;
+
+--Ver la estructura de la tabla libreta
+DESCRIBE libreta;
