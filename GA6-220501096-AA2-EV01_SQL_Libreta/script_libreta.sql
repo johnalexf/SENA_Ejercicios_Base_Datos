@@ -1,6 +1,6 @@
 -- Creacion de la base de datos
 
-CREATE DATABASE libreta;
+CREATE DATABASE db_libreta;
 
 -- Las sentencias de aqui en adelante se ejecutan dentro de la base de dato libreta.
 -- Creacion de la tabla libreta con sus atributos.
