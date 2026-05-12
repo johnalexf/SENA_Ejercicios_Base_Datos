@@ -86,3 +86,11 @@ db.carros.bulkWrite(
 
 //ver todos los documentos dentro la coleccion parque
 db.parque.find()
+
+//borrar el tercer documento de la coleccion parque
+db.carros.deleteOne(
+    { "placa": "kus456"}
+)
+
+//ver todos los documentos dentro la coleccion parque
+db.parque.find()
