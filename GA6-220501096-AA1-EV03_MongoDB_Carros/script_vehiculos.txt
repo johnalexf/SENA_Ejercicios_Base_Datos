@@ -6,7 +6,6 @@
 // Conectarse a mongoDB
 mongosh
 
-
 //ver bases de datos
 show dbs
 
@@ -14,10 +13,21 @@ show dbs
 use admin
 
 //crear y entrar en una base de datos
-use carros
+use db_carros
 
 //ver la base de datos en la cual se encuentra el sistema
 db
 
 //borrar base de datos
 db.dropDatabase()
+
+
+//crear nueva coleccion
+ db.createCollection("carros")
+
+//ver coleccion
+show collections
+
+//borrar coleccion
+db.carros.drop()
+
