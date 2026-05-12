@@ -94,3 +94,10 @@ db.carros.deleteOne(
 
 //ver todos los documentos dentro la coleccion parque
 db.parque.find()
+
+//ver un documento en especifico
+db.carros.find( 
+    {
+        "placa" : "mkn457"
+    }
+)
