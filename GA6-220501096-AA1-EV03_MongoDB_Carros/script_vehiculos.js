@@ -6,3 +6,18 @@
 // Conectarse a mongoDB
 mongosh
 
+
+//ver bases de datos
+show dbs
+
+//entrar en una base de datos
+use admin
+
+//crear y entrar en una base de datos
+use carros
+
+//ver la base de datos en la cual se encuentra el sistema
+db
+
+//borrar base de datos
+db.dropDatabase()
