@@ -31,3 +31,24 @@ show collections
 //borrar coleccion
 db.carros.drop()
 
+//insertar un documento JSON
+db.carros.insertOne(
+    {
+        "placa":"vem072",
+        "numero_serie": 12000384,
+        "modelo": 2024,
+        "marca" : "Chevrolet",
+        "kilometraje" : 23000,
+        "tipo": "sedan"
+    }
+)
+
+//ver todos los documentos dentro de una coleccion
+db.carros.find()
+
+//ver un documento en especifico
+db.carros.find( 
+    {
+        "placa" : "vem072"
+    }
+)
