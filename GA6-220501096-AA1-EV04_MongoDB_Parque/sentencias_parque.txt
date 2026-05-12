@@ -55,3 +55,34 @@ db.parque.insertMany(
 
 //ver todos los documentos dentro la coleccion parque
 db.parque.find()
+
+//Actualizar los datos del primer y ultimo registro
+db.carros.bulkWrite(
+    [
+        {
+            updateOne: {
+            filter: { "placa": "rgq154" },
+            update: { 
+                $set: {
+                     "modelo" : 2020,
+                     "kilometraje" : 500000 
+                    } 
+                }
+            }
+        },
+        {
+            updateOne: {
+            filter: { "placa": "gju154" },
+            update: { 
+                $set: { 
+                    "numero_serie" : 12000000,
+                    "marca" : "Hyundai"
+                } 
+             }
+            }
+        }
+    ]
+)
+
+//ver todos los documentos dentro la coleccion parque
+db.parque.find()
