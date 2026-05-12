@@ -98,3 +98,36 @@ db.carros.insertMany(
         }
     ]
 )
+
+//actualizar un dato de la coleccion
+db.carros.updateOne(
+    { "placa" : "vem072" },
+    { $set:
+        {
+            "marca" : "Nissan"
+        }
+    }
+)
+
+// actualizar mas de un objeto JSON cada uno con un filtro especifico
+db.carros.bulkWrite(
+    [
+        {
+            updateOne: {
+            filter: { "placa": "rgq154" },
+            update: { $set: { "kilometraje" : 500000 } }
+            }
+        },
+        {
+            updateOne: {
+            filter: { "placa": "ghi548" },
+            update: { $set: { "numero_serie" : 12000000 } }
+            }
+        }
+    ]
+)
+
+//borrar un documento
+db.carros.deleteOne(
+    { "placa": "vem072"}
+)
