@@ -52,3 +52,49 @@ db.carros.find(
         "placa" : "vem072"
     }
 )
+
+//insertar mas de un objeto JSON
+db.carros.insertMany(
+    [
+        {
+            "placa":"rgq154",
+            "numero_serie": 12000385,
+            "modelo": 2024,
+            "marca" : "Renault",
+            "kilometraje" : 35000,
+            "tipo": "Minivan"
+        },
+        {
+            "placa":"ghi548",
+            "numero_serie": 12000375,
+            "modelo": 2025,
+            "marca" : "Toyota",
+            "kilometraje" : 12000,
+            "tipo": "Camioneta"
+        },
+        {
+            "placa":"kus456",
+            "numero_serie": 12004385,
+            "modelo": 2012,
+            "marca" : "Kia",
+            "kilometraje" : 151000,
+            "tipo": "4x4"
+        },
+        {
+            "placa":"mkn457",
+            "numero_serie": 17000375,
+            "modelo": 2026,
+            "marca" : "Nissan",
+            "kilometraje" : 1000,
+            "tipo": "Familiar"
+        },
+        {
+            "placa":"gju154",
+            "numero_serie": 10000375,
+            "modelo": 2027,
+            "marca" : "Volkswagen",
+            "kilometraje" : 200,
+            "tipo": "Deportivo"
+        }
+    ]
+)
