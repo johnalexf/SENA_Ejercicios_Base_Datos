@@ -57,7 +57,7 @@ db.parque.insertMany(
 db.parque.find()
 
 //Actualizar los datos del primer y ultimo registro
-db.carros.bulkWrite(
+db.parque.bulkWrite(
     [
         {
             updateOne: {
@@ -88,7 +88,7 @@ db.carros.bulkWrite(
 db.parque.find()
 
 //borrar el tercer documento de la coleccion parque
-db.carros.deleteOne(
+db.parque.deleteOne(
     { "placa": "kus456"}
 )
 
@@ -96,7 +96,7 @@ db.carros.deleteOne(
 db.parque.find()
 
 //ver un documento en especifico
-db.carros.find( 
+db.parque.find( 
     {
         "placa" : "mkn457"
     }
