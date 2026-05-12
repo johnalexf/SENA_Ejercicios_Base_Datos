@@ -1,0 +1,9 @@
+// Conectarse a mongoDB
+mongosh
+
+//crear y entrar en una base de datos
+use db_parque
+
+//crear nueva coleccion
+ db.createCollection("parque")
+
